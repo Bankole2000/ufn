@@ -7,7 +7,7 @@ npm run build
 cd dist
 echo banky.studio >> CNAME
 # if you are deploying to a custom domain
-echo 'www.ultimatelyfertilenation.com' > CNAME
+echo ultimatelyfertilenation.com >> CNAME
 git init
 git config user.email "techybanky@gmail.com"
 git config user.name "Bankole Esan"
