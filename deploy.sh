@@ -5,7 +5,6 @@ set -e
 npm run build
 # navigate into the build output directory
 cd dist
-echo banky.studio >> CNAME
 # if you are deploying to a custom domain
 echo ultimatelyfertilenation.com >> CNAME
 git init
