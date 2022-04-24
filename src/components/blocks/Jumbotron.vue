@@ -43,6 +43,8 @@
                   depressed
                   :x-large="$vuetify.breakpoint.mdAndUp"
                   tile
+                  href="https://wa.link/31q1jj"
+                  target="_blank"
                   class="primary"
                   >Learn More</v-btn
                 >
@@ -50,6 +52,8 @@
                   depressed
                   :x-large="$vuetify.breakpoint.mdAndUp"
                   tile
+                  href="tel:09082013666"
+                  target="_blank"
                   class="mx-4 secondary"
                   >Contact Us</v-btn
                 >
