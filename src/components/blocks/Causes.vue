@@ -8,7 +8,16 @@
           :class="{ 'px-8': !$vuetify.breakpoint.mdAndUp }"
         >
           <v-card elevation="0">
-            <v-img src="@/assets/images/causes.jpeg"></v-img>
+            <v-img src="@/assets/images/causes.jpeg">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
           </v-card>
         </v-col>
         <v-col
