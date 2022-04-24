@@ -38,7 +38,17 @@
           :class="{ 'px-8': !$vuetify.breakpoint.mdAndUp }"
         >
           <v-card>
-            <v-img src="@/assets/images/whyInfertility.jpeg"></v-img>
+            <v-img src="@/assets/images/whyInfertility.jpeg">
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    size="72"
+                    color="primary"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>

@@ -16,7 +16,11 @@
     >
       <v-container>
         <v-row>
-          <v-col cols="12" md="8">
+          <v-col
+            cols="12"
+            md="8"
+            :class="{ 'px-8': !$vuetify.breakpoint.mdAndUp }"
+          >
             <div
               style="
                 height: 80vh;
@@ -32,11 +36,21 @@
                   Thou shalt be blessed above all people: For there shall be no
                   <strong>male</strong> or <strong>female</strong> barren in the
                   land</em
-                >" - (Deut 7: 14).
+                >" <br />&nbsp; - (Deut 7: 14).
               </p>
               <div>
-                <v-btn depressed x-large tile class="primary">Learn More</v-btn>
-                <v-btn depressed x-large tile class="mx-4 secondary"
+                <v-btn
+                  depressed
+                  :x-large="$vuetify.breakpoint.mdAndUp"
+                  tile
+                  class="primary"
+                  >Learn More</v-btn
+                >
+                <v-btn
+                  depressed
+                  :x-large="$vuetify.breakpoint.mdAndUp"
+                  tile
+                  class="mx-4 secondary"
                   >Contact Us</v-btn
                 >
               </div>
