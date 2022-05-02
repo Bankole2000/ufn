@@ -49,24 +49,8 @@
             </v-card-text>
             <v-divider class="mb-4"></v-divider>
             <v-card-actions>
-              <v-btn
-                class="secondary white--text px-6 text-capitalize"
-                :x-large="$vuetify.breakpoint.mdAndUp"
-                >What's in this
-                <v-icon v-if="$vuetify.breakpoint.mdAndUp" right
-                  >mdi-help-circle-outline</v-icon
-                ></v-btn
-              >
-              <v-btn
-                text
-                color="secondary"
-                class="text-capitalize px-6"
-                :x-large="$vuetify.breakpoint.mdAndUp"
-                >How to take
-                <v-icon v-if="$vuetify.breakpoint.mdAndUp" right
-                  >mdi-chevron-right-circle-outline</v-icon
-                ></v-btn
-              >
+              <WhatMale />
+              <HowMale />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -76,7 +60,10 @@
 </template>
 
 <script>
+import HowMale from "../modals/HowMale.vue";
+import WhatMale from "../modals/WhatMale.vue";
 export default {
+  components: { WhatMale, HowMale },
   data() {
     return {
       items: [

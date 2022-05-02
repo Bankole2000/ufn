@@ -51,24 +51,8 @@
             </v-card-text>
             <v-divider class="mb-4"></v-divider>
             <v-card-actions>
-              <v-btn
-                class="primary white--text px-6 text-capitalize"
-                :x-large="$vuetify.breakpoint.mdAndUp"
-                >What's in this
-                <v-icon v-if="$vuetify.breakpoint.mdAndUp" right
-                  >mdi-help-circle-outline</v-icon
-                ></v-btn
-              >
-              <v-btn
-                text
-                color="primary"
-                class="text-capitalize px-6"
-                :x-large="$vuetify.breakpoint.mdAndUp"
-                >How to take
-                <v-icon v-if="$vuetify.breakpoint.mdAndUp" right
-                  >mdi-chevron-right-circle-outline</v-icon
-                ></v-btn
-              >
+              <WhatFemale />
+              <HowFemale />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -78,7 +62,11 @@
 </template>
 
 <script>
+import HowFemale from "../modals/HowFemale.vue";
+import WhatFemale from "../modals/WhatFemale.vue";
+
 export default {
+  components: { WhatFemale, HowFemale },
   data() {
     return {
       items: [

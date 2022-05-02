@@ -77,12 +77,12 @@ export default {
     return {
       productTypes: [
         {
-          type: "Male",
+          type: "Female",
           image: "FEMALE.jpeg",
           text: "",
         },
         {
-          type: "Female",
+          type: "Male",
           image: "MALE.jpg",
           text: "",
         },

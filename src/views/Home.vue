@@ -9,7 +9,11 @@
     <FemaleFertility />
     <MaleFertility />
     <WhyChooseUs />
-    <Gallery />
+    <MediaCarousel />
+    <IngredientsList />
+    <IngredientCarousel />
+    <Testimonials />
+    <PurchaseForm />
     <Footer />
   </div>
 </template>
@@ -28,7 +32,12 @@ import CanI from "../components/blocks/CanI.vue";
 import WhyChooseUs from "../components/blocks/WhyChooseUs.vue";
 import MaleFertility from "../components/blocks/MaleFertility.vue";
 import FemaleFertility from "../components/blocks/FemaleFertility.vue";
-import Gallery from "../components/blocks/Gallery.vue";
+
+import MediaCarousel from "../components/blocks/MediaCarousel.vue";
+import IngredientsList from "../components/blocks/IngredientsList.vue";
+import IngredientCarousel from "../components/blocks/IngredientCarousel.vue";
+import PurchaseForm from "../components/forms/PurchaseForm.vue";
+import Testimonials from "../components/blocks/Testimonials.vue";
 
 export default {
   name: "Home",
@@ -43,7 +52,11 @@ export default {
     WhyChooseUs,
     MaleFertility,
     FemaleFertility,
-    Gallery,
+    MediaCarousel,
+    IngredientsList,
+    IngredientCarousel,
+    PurchaseForm,
+    Testimonials,
   },
 };
-</script>
+</script>,
